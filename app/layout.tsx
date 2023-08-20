@@ -12,6 +12,11 @@ const jakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: 'Swoony lahjakortit',
   description: '',
+  verification: {
+    other: {
+      facebook: '7j6x7vplfes8m21zio81nrick5jvk1',
+    },
+  },
 }
 
 export default function RootLayout({
