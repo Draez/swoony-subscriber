@@ -13,7 +13,6 @@ const quickSand = Quicksand({
 const Header: FC = () => {
   const [success, setSuccess] = useState<boolean>(false);
   const emailRef = React.useRef<HTMLInputElement>(null);
-  const nameRef = React.useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (window.location.search.includes("success=true")) {
@@ -105,7 +104,7 @@ const Header: FC = () => {
 
                 <div className="mb-8 max-w-md">
                   <div className="w-full mx-auto md:py-2 py-4 pr-0 flex items-center rounded-md bg-light-blue">
-                    <input required type="text" name="email" ref={emailRef} placeholder="Sähköposti"
+                    <input required type="email" name="email" ref={emailRef} placeholder="Sähköposti"
                       className="flex-1 appearance-none rounded bg-light-blue text-white focus:outline-none ml-4" />
                     <button type="submit"
                       className="bg-main-red hidden md:block text-white text-base font-semibold rounded-md shadow-md hover:bg-main-red-hover p-4 px-6 mr-4">Osallistu</button>
