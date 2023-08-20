@@ -95,7 +95,7 @@ const Header: FC = () => {
               <form
                 name="contact"
                 method="POST"
-                action="/?success=true"
+                action="?success=true"
                 data-netlify="true"
                 onSubmit={trackLeadAction}
               >
