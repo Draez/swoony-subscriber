@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: '',
   verification: {
     other: {
-      facebook: '7j6x7vplfes8m21zio81nrick5jvk1',
+      'facebook-domain-verification': '7j6x7vplfes8m21zio81nrick5jvk1',
     },
   },
 }
