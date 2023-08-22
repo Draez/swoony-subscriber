@@ -21,12 +21,14 @@ const Header: FC = () => {
     }
   }, []);
 
-  const trackLeadAction = () => {
+  const trackLeadAction = (e: any) => {
+    e.preventDefault(); // prevent default form submission
     const email = emailRef.current?.value;
 
     if (!email) return;
-    trackLead({
-      email,
+    trackLead({ email }).then(() => {
+      // After tracking, submit the form programmatically
+      e.target.submit();
     });
   };
 
