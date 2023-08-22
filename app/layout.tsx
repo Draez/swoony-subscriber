@@ -1,4 +1,3 @@
-"use client"; // This is a client component 👈🏽
 import { trackFbPageView } from '@/lib/fb';
 import './globals.css'
 import type { Metadata } from 'next'
