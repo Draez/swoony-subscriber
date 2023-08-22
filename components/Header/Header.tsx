@@ -11,6 +11,7 @@ const quickSand = Quicksand({
 });
 
 const Header: FC = () => {
+
   const [success, setSuccess] = useState<boolean>(false);
   const emailRef = React.useRef<HTMLInputElement>(null);
 

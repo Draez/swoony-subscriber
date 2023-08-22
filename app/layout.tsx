@@ -1,9 +1,8 @@
-import { trackFbPageView } from '@/lib/fb';
+
 import './globals.css'
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from "next/font/google";
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+
 
 const jakartaSans = Plus_Jakarta_Sans({
   weight: ["400", "600", "700"],
@@ -27,14 +26,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-
-  const router = useRouter();
-
-  useEffect(() => {
-    router.events.on("routeChangeComplete", () => {
-      trackFbPageView();
-    });
-  }, [router.events]);
 
   return (
     <html lang="en">
