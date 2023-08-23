@@ -56,7 +56,7 @@ const Header: FC = () => {
               <a href="https://swoony.io" className="text-md hidden md:block text-white font-bold mr-8">
                 Mikä on Swoony?
               </a>
-              <a href="https://www.instagram.com/swoonyapp/" target="_blank">
+              <a href="https://www.instagram.com/swoonyofficial/" target="_blank">
                 <Image
                   src="/instagram.svg"
                   alt="Instagram Icon"
@@ -66,10 +66,10 @@ const Header: FC = () => {
                   priority
                 />
               </a>
-              <a href="https://www.facebook.com/Swoonyapp" target="_blank">
+              <a href="https://www.facebook.com/profile.php?id=100095309208001" target="_blank">
                 <Image
                   src="/facebook.svg"
-                  alt="Instagram Icon"
+                  alt="Facebook Icon"
                   width={36}
                   height={24}
                   priority
